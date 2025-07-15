@@ -1,5 +1,7 @@
 package org.kosa.myproject.model;
 
+import java.sql.SQLException;
+
 import org.springframework.stereotype.Service;
 
 @Service
@@ -11,7 +13,7 @@ public class MemberService {
 		this.memberDao = memberDao;
 	}
 	
-	public String findMemberById(String id) {
+	public MemberVo findMemberById(String id) throws SQLException {
 		return memberDao.findMemberById(id);
 	}
 
