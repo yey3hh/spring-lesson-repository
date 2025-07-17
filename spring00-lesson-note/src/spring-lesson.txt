@@ -230,3 +230,6 @@ Proxy Design Pattern : Proxy는 대리인을 의미
 	INFO 정보
 	DEBUG 디버깅
 	TRACE 기록
+	
+	
+	
