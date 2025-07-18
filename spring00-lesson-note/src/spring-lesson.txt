@@ -232,4 +232,18 @@ Proxy Design Pattern : Proxy는 대리인을 의미
 	TRACE 기록
 	
 	
+*** ** *** MyBatis Framework *** ** ***
+
+Persistence Layer Framework	(영속성 계층 프레임워크)로서 SQL Mapper Framework (SQL 중심)
+데이터베이스 연동 로직을 효율적으로 개발 할 수 있도록 지원하는 SQL Mapper Framework
+
+Spring MyBatis 의존성 관리 : Maven의 pom.xml
+Spring MyBatis 설정 : application.properties
+
+	Java					XML Mapper					Database
+<<interface>>
+ MemberMapper			 MemberMapper.xml			     Mysql
+ 
+ Spring Container가 Proxy를 생성해 실행되는 구조
+	
 	
