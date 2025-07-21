@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.kosa</groupId>
-	<artifactId>spring15-MyBatis-DynamicSQL-product</artifactId>
+	<artifactId>spring15-MyBatis-product</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring15-MyBatis-product</name>
 	<description>Demo project for Spring Boot</description>
