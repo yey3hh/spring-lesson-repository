@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>총 회원 수 조회</title>
+</head>
+<body>
+	<h3>총 회원 수</h3>
+	<span th:text="'총 회원 수 ' + ${memberTotalCount} + '명'">총 회원 수</span>
+<!-- 	<h3>총 회원 수 <span th:text="${memberTotalCount}">몇</span>명</h3> -->
+</body>
+</html>
