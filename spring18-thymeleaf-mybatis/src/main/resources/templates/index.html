@@ -20,5 +20,73 @@
 		view : templates/member/total-count.html
 			   총 회원수 몇 명
 	*/-->
+	<br><br>
+	<a href="/hello">MyTestController test1 : Thymeleaf Template Engine</a> <br><br>
+	<a href="/paramTest?customerId=springKing&customerAge=22">MyTestController test2</a> <br><br>
+	<!--/* 
+			Step 1. 
+			MyTestController paramTest 메서드 정의
+			매개변수 적절히 받아서 sysout() ==> springKing
+			templates아래에 result2.html을 만들어서 
+			p 태그에 매개변수 정보 출력
+			
+			Step 2. 
+			고객 나이가 18세 초과하면
+			result2.html에서 p태그 추가해서 성인 22세 또는 미성년 14세 출력
+			컨트롤러에서 model을 이용해서 정보를 공유(성인 또는 미성년)
+			
+			아래 form은 컨트롤러에서 배열 타입으로 매개변수가 처리되는 지 확인하고 
+			redirect 방식으로 처리해서 응답하는 연습
+	*/-->
+	<form action="/paramTest2" method="post">
+		<input type="checkbox" name="menu" value="교촌치킨">교촌치킨<br>
+		<input type="checkbox" name="menu" value="충만치킨">충만치킨<br>
+		<input type="checkbox" name="menu" value="깐부치킨">깐부치킨<br>
+		<button type="submit">주문</button>
+	</form>
+	<br><br>
+	
+	<!--/*  
+			아래는 result4에서 thymeleaf 방식의 loop를 테스트하기 위한 예제
+	*/-->
+	<form action="/paramTest3" method="post">
+		<input type="checkbox" name="menu" value="교촌치킨">교촌치킨<br>
+		<input type="checkbox" name="menu" value="충만치킨">충만치킨<br>
+		<input type="checkbox" name="menu" value="깐부치킨">깐부치킨<br>
+		<button type="submit">주문</button>
+	</form>
+	<br><br>
+	
+	<a href="/customer-list">고객 명단</a>
+	<br><br>
+	
+	<!--/* 
+			Customer has a Car : 고객 정보에 자동차 정보까지 포함해서 전달
+	*/-->
+	<form action="/has-a-test" method="post">
+		<input type="text" name="id" required="required" placeholder="아이디"><br>	
+		<input type="text" name="name" required="required" placeholder="이름"><br>	
+		<input type="text" name="address" required="required" placeholder="주소"><br>	
+		<input type="text" name="car.model" required="required" placeholder="차모델"><br>	
+		<input type="number" name="car.price" required="required" placeholder="차가격"><br>	
+		<button type="submit">등록</button>
+	</form>
+	<br><br>
+	<!-- 컨트롤러 매개변수로 세션을 받도록 하고 테스트 -->
+	<a href="/sessionTest0">세션 테스트 0</a>
+	<br><br>
+	
+	<!-- 컨트롤러 매개변수로 세션을 받도록 하고 customer 인증정보를 세션에 저장하고 테스트 -->
+	<a href="/sessionTest1">세션 테스트 1</a>
+	<br><br>	
+
+	<!-- 컨트롤러 매개변수로 request를 받도록 하고 세션의 존재유무와 인증정보 유무를 확인 -->
+	<a href="/sessionTest2">세션 테스트 2</a>
+	<br><br>	
+	<!--/*  
+			타임리프 주석
+			정적 자원 : images, css, js 등은 src/main/resources/static 에 배치한다.
+	*/-->
+	<img alt="" src="/images/thymeleaf.png">
 </body>
 </html>
