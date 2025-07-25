@@ -292,3 +292,8 @@ HandlerAdapter가 컨트롤러 메서드를 실행한다(이 때 필요한 매�
 	- 사용자 요청 - 서블릿 컨테이너 (웹 컨테이너) - jsp - java 생성 - class 컴파일 - 서블릿 실행 - html 응답
 - Thymeleaf
 	- 사용자 요청 - 스프링 컨트롤러 - 템플릿 엔진 - **(thymeleaf)html 파싱, 데이터 할당(바인딩, binding)** - 클라이언트에게 전달할 html로 응답
+	
+
+*** ** *** TDD *** ** ***
+TDD : Test Driven Development
+JUnit : TDD를 위한 자바 테스트 프레임워크
